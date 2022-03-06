@@ -1,8 +1,8 @@
 <p align="center"><img src="https://firebasestorage.googleapis.com/v0/b/alanbernal-dev.appspot.com/o/alanbernal-imagotipo.png?alt=media&token=a1835f31-7a27-4453-a46a-c63ea4c7b513" alt="logo" width="500"></p>
 
-# Static Websites Template
+# Calculadora de cuotas
 
-Plantilla de proyecto para sitios estáticos con Laravel Mix.
+Aplicación web de calculadora de cuotas.
 
 ## Desarrollador
 Alan Bernal Espinoza
@@ -13,16 +13,10 @@ Alan Bernal Espinoza
 ## Empezando
 Clonar el repositorio de github:
 ```bash
-git clone https://github.com/alanbernale/static-websites-template.git
+git clone https://github.com/alanbernale/calculadora-de-cuotas.git
 ```
 
-O bien clonar y renombrar la carpeta:
-```bash
-git clone https://github.com/alanbernale/static-websites-template.git [nombre_carpeta]
-```
-Donde [nombre_carpeta] es el nuevo nombre de la carpeta de la plantilla.
-
-Navegue al directorio raíz /static-websites-template e instale las dependencias:
+Navegue al directorio raíz /calculadora-de-cuotas e instale las dependencias:
 ```bash
 npm install
 ```

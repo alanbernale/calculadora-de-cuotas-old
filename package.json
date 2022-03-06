@@ -1,12 +1,12 @@
 {
-    "name": "static-websites-template",
-    "version": "1.1.0",
+    "name": "calculadora-de-cuotas",
+    "version": "1.0.0",
     "author": "Alan Bernal E.",
-    "description": "Plantilla de proyecto para sitios estáticos con Laravel Mix.",
+    "description": "Aplicación web de calculadora de cuotas.",
     "keywords": [
-        "static",
-        "laravel-mix",
-        "template"
+        "calculadora",
+        "cuotas",
+        "Web Application"
     ],
     "scripts": {
         "dev": "npm run development",
