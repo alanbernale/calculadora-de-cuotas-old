@@ -1,2 +1,11 @@
-// Font
-$font-family: 'Nunito', sans-serif;
+/*=============== Variables CSS ===============*/
+// Tipografía
+$font-family:               'Poppins', sans-serif;
+
+// Colores
+$theme-color-1:             rgb(29, 31, 42);
+$theme-color-2:             rgb(0, 78, 168);
+$text-color:                rgb(135, 138, 149);
+
+$primary:                   $theme-color-1;
+$secondary:                 $theme-color-2;

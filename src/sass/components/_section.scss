@@ -1,0 +1,64 @@
+/*=============== Section CSS ===============*/
+// Estilos Generales de Sección
+.section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+// Estilos de Sección Result
+.result {
+    &__section {
+
+    }
+
+    &__card {
+        border: 1px solid #edeeee;
+        background-color: #f6f6f6;
+        padding: 2.5rem 1.25rem;
+        -webkit-border-radius: .25rem;
+        -moz-border-radius: .25rem;
+        border-radius: .25rem;
+    }
+
+    &__paragraph {
+        margin-bottom: 0;
+        text-align: center;
+
+        & + & {
+            margin-top: .25rem;
+        }
+    }
+
+    &__fee-value {
+        margin-top: .75rem;
+        margin-bottom: .75rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: $primary;
+        text-align: center;
+    }
+
+    &__total-value {
+        margin-top: .5rem;
+        margin-bottom: 0;
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: $primary;
+        text-align: center;
+    }
+}
+
+// Estilos de Sección Calculate
+.calculate {
+    &__section {
+        padding-top: 0;
+        padding-bottom: 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    &__container {
+        padding: 1.5rem;
+    }
+}

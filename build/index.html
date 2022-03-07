@@ -9,12 +9,27 @@
     <!-- Start: Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <!-- End: Fonts -->
 
     <!-- Start: Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!-- End: Favicon -->
 
     <!-- Start: Styles -->
@@ -23,17 +38,66 @@
 </head>
 <body>
 
-<div class="flex-center position-ref full-height">
-    <div class="content">
-        <div class="title m-b-md">
-            Calculadora de cuotas
-        </div>
+<!-- Start: Navbar -->
+<nav class="navbar navbar-expand navbar-dark bg-primary" aria-label="Main Navbar">
+    <div class="container-fluid d-flex justify-content-center">
+        <a class="navbar-brand" href="/">Calculadora de cuotas</a>
+    </div>
+</nav>
+<!-- End: Navbar -->
 
-        <div class="links">
-            <a href="https://github.com/alanbernale/calculadora-de-cuotas" target="_blank">Ver en GitHub</a>
+<!-- Start: Form Section -->
+<main class="section form__section">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="input-amount" class="form-label">Monto en préstamo</label>
+                    <input type="number" class="form-control form-control-lg" id="input-amount" name="input-amount" placeholder="Ej: 3500">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="input-tea" class="form-label">TEA %</label>
+                    <input type="number" class="form-control form-control-lg" id="input-tea" name="input-tea" placeholder="Ej: 69.78">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="input-number-fee" class="form-label">Nro. de Cuotas</label>
+                    <div class="input-group">
+                        <button class="btn btn-lg btn-outline-secondary" type="button" id="button-decrease">&minus;</button>
+                        <input type="number" class="form-control form-control-lg text-center" id="input-number-fee" name="input-number-fee-2" value="2">
+                        <button class="btn btn-lg btn-outline-secondary" type="button" id="button-increase">&plus;</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</main>
+<!-- End: Form Section -->
+
+<!-- Start: Result Section -->
+<section class="section result__section">
+    <div class="container">
+        <div class="result__card">
+            <p class="result__paragraph">Tu cuota aproximada es:</p>
+            <h2 class="result__fee-value" id="tag-fee-value">S/ 0.00</h2>
+            <p class="result__paragraph">En base a tu Tasa Mensual: <strong><span id="tag-tem">0.00%</span></strong></p>
+            <p class="result__paragraph">Pagando un total de:</p>
+            <h3 class="result__total-value" id="tag-total-value">S/ 0.00</h3>
+        </div>
+    </div>
+</section>
+<!-- End: Result Section -->
+
+<!-- Start: Calculate Section -->
+<section class="section calculate__section">
+    <div class="calculate__container d-grid gap-2">
+        <button type="button" class="btn btn-primary btn-lg" id="calculate-button">Calcular</button>
+    </div>
+</section>
+<!-- End: Calculate Section -->
 
 <!-- Start: Scripts -->
 <script src="js/app.min.js"></script>
